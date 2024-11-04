@@ -9,6 +9,7 @@ import Landingpage from './pages/Landingpage.jsx';
 import ErrorPage from './ErrorPage.jsx';
 import AboutPage from './pages/About.jsx';
 import TestimonialsPage from './pages/TestimonialsPage.jsx';
+import Contact from './pages/Contact.jsx';
 import './assets/index.css'
 
 const router = createBrowserRouter([
@@ -26,7 +27,12 @@ const router = createBrowserRouter([
     path: 'about',
     element: <AboutPage />,
     errorElement: <ErrorPage />
-  }
+  },
+  {
+    path: 'contact',
+    element: <Contact />,
+    errorElement: <ErrorPage />,
+  },
 ]);
 
 createRoot(document.getElementById('root')).render(

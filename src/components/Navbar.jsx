@@ -12,7 +12,7 @@ export default function Navbar() {
         { name: 'About Us', href: '/about' },
         { name: 'Testimonials', href: '/Testimonials' },
         { name: 'Contact Us', href: '/Contact' },
-        { name: 'Links', href: '/' },
+        { name: 'Links', href: '/Links' },
       ] 
 
     return (
@@ -40,9 +40,9 @@ export default function Navbar() {
               <Bars3Icon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
-          <div className="hidden lg:flex justify-content-center lg:gap-x-12">
+          <div className="hidden lg:flex justify-content-center items-center lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} to={item.href} className="text-sm font-semibold leading-6 border-b-2 border-transparent hover:border-b-2 hover:border-gray-500 hover:text-gray-500 transition duration-200 text-gray-900">
+              <Link key={item.name} to={item.href} className="text-sm font-semibold leading-6 border-b-2 border-transparent hover:border-b-2 hover:border-white hover:text-white transition duration-200 text-gray-900">
                 {item.name}
               </Link>
             ))}

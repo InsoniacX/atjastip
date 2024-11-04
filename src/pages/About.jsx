@@ -5,7 +5,7 @@ export default function AboutPage() {
     return (
         <>
             <Navbar />
-            <div className="container flex justify-center items-center w-[100vw] h-[88vh]">
+            <div className="flex justify-center items-center w-[100%] h-[88vh]">
                 <div className='text-center px-5 pb-2 border-2 my-5 w-[80%] border-black h-fit rounded-lg'>
                     <div className='flex justify-center'>
                         <img 
